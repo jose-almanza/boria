@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 13px;
+    color: #913f31;
+    font-family: 'Gill Sans', sans-serif;
+    background-color: rgb(231, 207, 197);
+}
+.menu__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 135px;
+    background-color: white;
+}
+.menu__content ul{
+    list-style: none;    
+    text-transform: uppercase;
+}
+.menu__content ul > li > a{
+    text-decoration: none;    
+    font-size: 13px;
+    color: #913f31;
+}
+.menu__content--principal-nav ul > li > a:hover{
+    color: #cf8072;
+}
+.menu__content--logo{
+    width: 143px;
+    height: 61px;
+}
+.menu__content--principal-nav{
+    height: 25px;
+}
+.menu__content--principal-nav ul{
+    display: flex;
+    width: 60vw;
+}
+.menu__content--principal-nav ul li{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 200px;
+    float: left;
+}
+
+.menu__content--item-arrow a::after{
+    content: url(../assets/arrow-icon.png);
+    position: relative;
+    padding-left: 5px;
+}
+
+.menu__content--secondary-nav{
+    display: flex;
+    justify-content: flex-start;    
+    align-items: center;
+    height: 25px;
+}
+
+.menu__content--secondary-nav ul > li{
+    height: 30px;
+    width: 40px;
+    float: left;
+}
+.menu__content--secondary-nav img{
+    height: 24px;
+    width: 24px;
+}
+.menu__content--buy{
+    display: flex;
+    align-items: center;
+}
+.menu__content--buy:hover{    
+    color: #cf8072;
+}
+.menu__content--buy img:hover{
+    content: url(../assets/buy-icon-hover.png);
+}
+.menu__content--buy-number{
+    padding-left: 5px;
+}
+.menu__content--user img:hover{
+    content: url(../assets/user-icon-hover.png);
+}
+.menu__content--search img:hover{
+    content: url(../assets/search-icon-hover.png);
+}
+.menu__content--burger{
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 900px){
+    .menu__content--logo{
+        height: 42.66px;
+        width: 100px;
+    }
+    .menu__content--logo img{
+        height: 42.66px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .menu__content--burger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .menu__content--principal-nav{
+        display: none;
+    }
+    .menu__content--burger{
+        display: block;
+    }
+}
